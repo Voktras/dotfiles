@@ -1,0 +1,28 @@
+[mgr]
+ratio = [1, 2, 4]
+sort_by = "mtime"
+show_hidden = true
+linemode = "none"
+sort_dir_first = true
+sort_reverse = true
+show_symlink = true
+sort_sensitive = true
+
+[preview]
+tab_size = 2
+max_width = 2000
+max_height = 1200
+cache_dir = ""
+eberzug_scale = 1
+ueberzug_offset = [0, 0, 0, 0]
+image_filter = "triangle"
+image_quality = 75
+sixel_fraction = 15
+
+[tasks]
+micro_workers = 5
+macro_workers = 10
+bizarre_retry = 5
+
+[log]
+enabled = false
