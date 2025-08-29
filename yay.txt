@@ -1,2 +1,3 @@
 sesh-bin
 vicinae-bin
+ascii-image-converter

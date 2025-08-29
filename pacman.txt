@@ -6,8 +6,6 @@ eza
 tree
 bat
 yazi
-ascii-image-converter
-chafa
 neovim
 git
 stow
