@@ -18,4 +18,5 @@ wget
 unzip
 p7zip
 rsync
-
+ttf-nerd-fonts-symbols-mono
+wl-clipboard
