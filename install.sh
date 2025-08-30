@@ -37,16 +37,16 @@ else
   echo "⚠️ No yay.txt found, skipping."
 fi
 
-# NOTE: Installing font
-FOND_DIR="$HOME/.local/share/fonts"
+# NOTE: Installing Maple Mono font
+FONT_DIR="$HOME/.local/share/fonts"
 MAPLE_DIR="$FONT_DIR/MapleMono"
 
 if [ ! -d "$MAPLE_DIR" ]; then
   echo "[*] Installing Maple Mono font..."
-  mkdir -p "$FOND_DIR"
+  mkdir -p "$MAPLE_DIR"
   tmpdir=$(mktemp -d)
-  git clone --depth=1  https://github.com/subframe7536/maple-font.git "$tmpdir/maple-font"
-  cp -r "$tmpdir/maple-font/fonts/ttf" "$MAPLE_DIR"
+  git clone --depth=1 https://github.com/subframe7536/maple-font.git "$tmpdir/maple-font"
+  cp "$tmpdir/maple-font/fonts/ttf/"*.ttf "$MAPLE_DIR"
   rm -rf "$tmpdir"
   fc-cache -fv > /dev/null
   echo " -> Maple Mono installed."
@@ -54,6 +54,7 @@ else
   echo " -> Maple Mono is already installed."
 fi
 
+# dotfiles
 echo "[*] Setting up dotfiles..."
 if [ -d "$HOME/dotfiles" ]; then
   cd "$HOME/dotfiles"

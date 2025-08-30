@@ -41,11 +41,6 @@ local config = {
 
 	font = wezterm.font_with_fallback({
 		"Maple Mono",
-		-- "Monaspace Argon",
-		-- "Monaspace Krypton",
-		-- "Monaspace Neon",
-		-- "Monaspace Radon",
-		-- "Monaspace Xenon",
 		-- { family = "Noto Color Emoji" }, -- default?
 		-- NOTE: fallback font for Nerd Font icons
 		{ family = "Symbols Nerd Font Mono" },
